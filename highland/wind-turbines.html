@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wind Turbines in Highland</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  
+  <title>Wind Turbines in Highland</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <!-- Google Font CSS!-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+  
+  
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div id='map'></div>
+<div id='console'>
+  <h1>Wind Turbines in Highland</h1>
+  <p>Data: <a href='https://spatialdata.gov.scot/'> The Location of Wind Turbines </a> and <a href='https://globalwindatlas.info/'> Wind Energy Factor EIC Class I </a> in Highland</p>
+  </div>
+  
+  <!–– Radio buttons go below––>
+   
+ 
+  <div class='status' id='filters'>
+    
+    <h2>Wind Turbines Status</h2>
+   
+    <input id='all' type='radio' name='toggle' value='all' checked='checked'>
+    <label for='all'>All</label> <br>
+    
+    <input id='Constructed' type='radio' name='toggle' value='Constructed'>
+    <label for='Constructed'>Constructed</label> <br>
+    
+    <input id='U_Construction' type='radio' name='toggle' value='U_Construction'>
+    <label for='U_Construction'>Under Construction</label> <br>
+    
+    <input id='Refused' type='radio' name='toggle' value='Refused'>
+    <label for='Refused'>Refused</label> <br>
+    
+    <input id='Scoping_Screening' type='radio' name='toggle' value='Scoping_Screening'>
+    <label for='Scoping_Screening'>Scoping Screening</label> <br>
+    
+    <input id='Withdrawn' type='radio' name='toggle' value='Withdrawn'>
+    <label for='Withdrawn'>Withdrawn</label> <br>
+    
+    <input id='Approved' type='radio' name='toggle' value='Approved'>
+    <label for='Approved'>Approved</label> <br>
+    
+    <input id='In Planning' type='radio' name='toggle' value='In Planning'>
+    <label for='In Planning'>In Planning</label> <br>
+    
+    <input id='Expired' type='radio' name='toggle' value='Expired'>
+    <label for='Expired'>Expired</label> <br>
+    
+    <input id='Approved-Superseded' type='radio' name='toggle' value='Approved-Superseded'>
+    <label for='Approved-Superseded'>Approved-Superseded</label> <br>
+    
+    <input id='Constructed-Removed' type='radio' name='toggle' value='Constructed-Removed'>
+    <label for='Constructed-Removed'>Constructed-Removed</label> <br>
+    
+  </div>
+ 
+  <div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <button class="button"  onclick="myFunction()" style="vertical-align:middle"> <span> <i class="fa fa-filter"> </i> Filter </span>
+    </div>
+    
+     <!–– legend goes below––>
+    
+<div id='legend'>
+  
+  <h4> Energy Factor </h4>
+  <l1>max: 0.74</l1>
+  <div class="color9"> </div>
+  <div class="color8"> </div>
+  <div class="color7"> </div>
+  <div class="color6"> </div>
+  <div class="color5"> </div>
+  <div class="color4"> </div>
+  <div class="color3"> </div>
+  <div class="color2"> </div>
+  <div class="color1"> </div>
+  <l2> min: 0.11  </l2>
+  </div>
+
+ 
+  </body>
+  
+    
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

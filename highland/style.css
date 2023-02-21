@@ -1,0 +1,213 @@
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: Black;
+  font-family: Lato, sans-serif;
+}
+
+/*Style for p*/
+p {
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+/*Style for a*/
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+}
+
+#console {
+  position: absolute;
+  width: 240px;
+  margin: 10px;
+  border: outset;
+  padding: 10px 20px;
+  background-color: rgba(246, 236, 236, 0.8);
+  border-radius: 20px ;
+}
+
+/*Style for the pop-up*/
+.my-popup .mapboxgl-popup-content {
+  width: 200px;
+  background: rgba(246, 236, 236, 0.8);
+  border-top: 50px black;
+  border: double;
+  padding: 20px;
+  color: black; 
+}
+
+/*Style for radio buttons*/
+
+h2 {
+  color: black;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.status {
+  
+  position: absolute; left: 10px; top:365px;
+  width: 240px;
+  border-radius: 10px ;
+  border-style: double;
+  background-color: rgba(246, 236, 236, 0.8);
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+  
+  
+}
+
+/* legend style */
+#legend {
+  position: absolute; left: 10px; bottom:40px;
+  width: 100px;
+  height: 290px;
+  border: double;
+  background-color: rgba(246, 236, 236, 0.8);
+  border-radius: 20px ;
+}
+
+h4 {
+  font-size: 16px;
+  color: Black;
+  font-family: Lato, sans-serif;
+}
+
+l1 {
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+l2 {
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+.color1{
+
+width:30px;
+height:20px;
+background-color:#FFFFD9;
+
+}
+
+.color2{
+
+width:30px;
+height:20px;
+background-color:#EDF8B1;
+
+}
+
+.color3{
+
+width:30px;
+height:20px;
+background-color:#C7E9B4;
+
+}
+
+.color4{
+
+width:30px;
+height:20px;
+background-color:#7FCDBB;
+
+}
+
+.color5{
+
+width:30px;
+height:20px;
+background-color:#41B6C4;
+
+}
+
+.color6{
+
+width:30px;
+height:20px;
+background-color:#1D91C0;
+
+}
+
+.color7{
+
+width:30px;
+height:20px;
+background-color:#225EA8;
+position: center;
+
+}
+
+.color8{
+
+width:30px;
+height:20px;
+background-color:#253494;
+  
+}
+
+.color9{
+
+width:30px;
+height:20px;
+background-color:#081D58;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Button style*/
+.button {
+  display: inline-block;
+  border-radius: 40px;
+  background-color: rgba(246, 236, 236, 0.8);
+  border: dashed ;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 155px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: relative; left:5px; top:270px ;
+  font-family: Lato, sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 0.5;
+  right: 0;
+}
